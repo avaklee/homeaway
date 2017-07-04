@@ -9,4 +9,6 @@ devise_for :users, controllers: {
   passwords:     'users/passwords',
   registrations: 'users/registrations'
 }
+
+root to: "families#index"
 end
