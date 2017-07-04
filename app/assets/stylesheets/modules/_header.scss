@@ -1,0 +1,50 @@
+.header{
+  height: 50px;
+  line-height: 50px;
+  &__left{
+    width: 15%;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    }
+  &__right{
+    width: 47%;
+    float: right;
+    height:50px;
+    font-size: 14px;
+    &__destination{
+      width: 17%;
+      float: left;
+      text-align: center;
+    }
+    &__inspire{
+      width: 17%;
+      float: left;
+      text-align: center;
+    }
+    &__signup{
+      width: 15%;
+      float: left;
+      text-align: center;
+    }
+    &__login{
+      width: 15%;
+      float: left;
+      text-align: center;
+    }
+    &__language{
+      width: 15%;
+      float: left;
+      text-align: center;
+    }
+    &__becomehost{
+      width:15%;
+      float: right;
+      margin-right:40px;
+      text-align: center;
+    }
+  }
+}
+.btn{
+  border-width: 0px;
+}
