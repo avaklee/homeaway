@@ -1,14 +1,14 @@
 !!!
-%html{:lang => "en"}
+%html{lang: "en"}
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
     / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
     %title Bootstrap 101 Template
     / Bootstrap
-    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{href: "css/bootstrap.min.css", rel: "stylesheet"}/
     / HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     / WARNING: Respond.js doesn't work if you view the page via file://
     /[if lt IE 9]
@@ -18,7 +18,7 @@
 .wrapper
   .header
     .header__left
-      HomeAway
+      Homeaway
     .header__right
       .header__right__destination
         .dropdown
@@ -33,7 +33,7 @@
       .header__right__inspire
         .dropdown
           %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
-            Inspire me!
+            Inspeee it!
       .header__right__signup
         .dropdown
           %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
@@ -41,9 +41,9 @@
             %span.caret
           %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
             %li
-              %a{href: "#"} guest
+              %a{href: "users/sign_up"} guest
             %li
-              %a{href: "#"} host
+              %a{href: "hosts/sign_up"} host
       .header__right__login
         .dropdown
           %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
@@ -51,9 +51,9 @@
             %span.caret
           %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
             %li
-              %a{href: "#"} guest
+              %a{href: "users/sign_in"} guest
             %li
-              %a{href: "#"} host
+              %a{href: "hosts/sign_in"} host
       .header__right__language
         .dropdown
           %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
@@ -74,11 +74,89 @@
         =form_tag('/families', method: :search) do
           %textarea{cols: "30", name: "text", placeholder: "  Where is your next destination?", rows: "2"}
           .main__initial-form__checkin
-            #datepicker.input-daterange.input-group
-              %input.input-sm.form-control{:name => "start", :type => "text"}/
-              %span.input-group-addon to
-              %input.input-sm.form-control{:name => "end", :type => "text"}/
+            checkin
           .main__initial-form__checkout
             check-out
           %input{type: "submit", value: "Submit"}
+  .title
+    Families & Experience you may Love
+  .lists
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Kathmandu
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Kathmandu
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Seoul
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Shanghai
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+  .title1
+    Hear from people who stayed with Inspeee Families
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .title2
+    Frequently asked Q&A
+  .title2
+    Who we are
 
