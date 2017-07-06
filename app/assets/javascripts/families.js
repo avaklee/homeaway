@@ -1,2 +1,5 @@
-$('#sandbox-container .input-daterange').datepicker({
+$(function() {
+  console.log("test");
+  $('.input-sm.form-control').datepicker();
 });
+

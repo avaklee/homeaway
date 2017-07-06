@@ -12,55 +12,132 @@
     position: absolute;
     &__initial-form{
       width: 60%;
-      height: 60px;
-      line-height: 60px;
+      height: 50px;
+      line-height: 50px;
       background-color: white;
       position: relative;
       margin: auto;
-      top: 190px;
+      top: 200px;
       bottom: 0;
       left: 0;
       right: 0;
       text-align: center;
-      textarea {
-        float: left;
-        width: 40%;
-        margin-left: 20px;
-        text-align: left;
-        font-size: 17px;
-        line-height: 60px;
-        padding-left: 20px;
-        color: navy;
+      border-radius: 15px;
+        textarea {
+          float: left;
+          width: 45%;
+          height: 50px;
+          margin-left: 20px;
+          text-align: left;
+          font-size: 17px;
+          line-height: 50px;
+          padding-left: 20px;
+          color: navy;
+        }
+        .input-daterange{
+          float: left;
+          height: 50px;
+          width: 30%;
+          color: navy;
+          margin-left: 80px;
+        }
+        .submit-btn{
+          float: right;
+          width: 15%;
+          font-size: 15px;
+          line-height: 50px;
+          color: navy;
+          background-color: #38AEF0;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+        }
+        .input-sm{
+          float: left;
+          height: 50px;
+          font-size: 15px;
+          text-align: center;
+          color: black;
+        }
+        input, button, textarea, select {
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
       }
-      &__checkin{
-        float: left;
-        margin-left: 110px;
-        width:15%;
-        color: navy;
-      }
-      &__checkout{
-        float: left;
-        width:15%;
-        color: navy;
-      }
-      input {
-        float:  left;
-        width: 15%;
-        font-size: 15px;
-        line-height: 60px;
-        color: navy;
-      }
-      input, button, textarea, select {
-      margin: 0;
-      padding: 0;
-      background: none;
-      border: none;
-      border-radius: 0;
-      outline: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-}
     }
   }
+  .title{
+    height: 45px;
+    margin-top: 480px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    clear: both;
+  }
+  .title1{
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    margin-top: 700px;
+    margin-bottom: 15px;
+    clear: both;
+  }
+  .title2{
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    clear: both;
+  }
+
+  .lists{
+    margin: 0, auto;
+    &__list{
+      height:300px;
+      width:20%;
+      margin: 10px 35px 10px 35px;
+      float: left;
+      &__pic{
+        height:200px;
+        width:100%;
+        background-color: pink; 
+      }
+      &__area{
+        height:30px;
+        line-height: 30px;
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &__description{
+        height:80px;
+        margin-top:5px;
+        margin-left:  5px;
+      } 
+    }
+  }
+}
+
+.ui-datepicker{
+  background-color: white;
+  font-size: 14px;
+  margin-top:5px;
+  border-radius: 5px;
+  padding:3px;
+}
+.input-group-addon{
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-size: 15px;  
 }
