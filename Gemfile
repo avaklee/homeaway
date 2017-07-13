@@ -32,6 +32,9 @@ gem 'devise'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem "font-awesome-rails"
+gem 'pry-rails'
+gem 'carrierwave'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
