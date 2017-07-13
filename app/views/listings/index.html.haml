@@ -1,0 +1,94 @@
+.wrapper
+  = render partial: "top"
+  .main
+    %img{src: "http://www.resortcollection.com/wp-content/themes/resortcollection/property-images/summit/summit-beach-resort-panama-city-beach-fl-beach-01.jpg"}
+      .main__initial-form
+        =form_tag('/families', method: :search) do
+          %textarea{cols: "30", name: "text", placeholder: "  Where is your next destination?", rows: "2"}
+          #datepicker.input-daterange.input-group
+            %input.input-sm.form-control{name: "start", type: "text", placeholder: "Check-in"}
+            %span.input-group-addon to
+            %input.input-sm.form-control{name: "end", type: "text", placeholder: "Check-out"}
+          %input{type: "submit", value: "Submit", class: "submit-btn"}
+  .title
+    Families & Experience you may Love
+  .lists
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Kathmandu
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Kathmandu
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Seoul
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Shanghai
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+    .lists__list
+      .lists__list__pic
+      .lists__list__area
+        Luang Prabang
+      .lists__list__description
+        We are couple living in LuangPrabang, and we are working in the Cultural University!
+  .title1
+    Hear from people who stayed with Inspeee Families
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .lists__list
+    .lists__list__pic
+    .lists__list__area
+      Luang Prabang
+    .lists__list__description
+      The experience was eyeawakening for me.
+  .title2
+    Frequently asked Q&A
+  .title2
+    Who we are
+

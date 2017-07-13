@@ -1,6 +1,5 @@
 class Family < ApplicationRecord
   belongs_to :city
-  belongs_to :host
-  belongs_to :country
+  belongs_to :user
 end
 
