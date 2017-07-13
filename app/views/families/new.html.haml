@@ -1,0 +1,79 @@
+.wrapper
+  = render partial: "top"
+  .main1
+    .menu
+    .progress
+      .progress__how_it_works
+        Homestay Listing Progress
+      .progress__home
+        %i.fa.fa-home{"aria-hidden" => "true"}
+        .progress__home__word
+          home
+      .progress__location
+        location
+      .progress__rooms
+        rooms
+      .progress__meals
+        meals
+      .progress__rules
+        rules
+      .progress__photo
+        photo
+      .progress__profile
+        profile
+    .form
+      .form__look
+        My Homestay
+        / .form__look__edit_btn EDIT
+      .form__title
+        .form__title__house_type
+          .form__title__house_type__lable
+            Home Type (*)
+          .form__title__house_type__dropdown
+            .dropdown
+              %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
+                Please select the house type
+                %span.caret
+              %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+                %li
+                  %a{href: "#"} apartment
+                %li
+                  %a{href: "#"} house
+        .form__title__listing
+        = form_for @family, url: families_path do |f|
+          .form__title__listing__lable
+            Your listing Title (*)
+          = f.text_field :name, placeholder: "Add a catchy title!", class: "form__title__listing__input"
+          .form__title__listing__lable
+            Country
+          .form__title__listing__lable
+            City
+          
+          .form__title__listing__notice
+            Maximum 35 characters (35 remaining)
+          .form__title__description
+          .form__title__description__label
+            About the Homestay *
+          = f.text_field :description, placeholder: "Tell us about your home & family", class: "form__title__description__input"
+          .form__title__description__notice
+            Minimum 100 characters
+          = f.submit "continue", class: "continue_btn", data: { disable_with: "save"}
+
+    .notice_1
+      Complete each step now and you can edit your listing once finished!
+    .notice_2
+      A host lives in every homestay listed on homestay.com, none of our homestays are vacant properties. We understand that you can't be there all the time, but just to welcome and orientate your guests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

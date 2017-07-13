@@ -1,0 +1,43 @@
+.header
+  .header__left
+    Homeaway
+  .header__right
+    .header__right__destination
+      .dropdown
+        %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
+          Destination
+          %span.caret
+        %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          %li
+            %a{href: "#"} Laos
+          %li
+            %a{href: "#"} Nepal
+    .header__right__inspire
+      .dropdown
+        %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
+          Inspeee it!
+    -if user_signed_in?
+      .header__right__login
+        = link_to "logout", destroy_user_session_path, method: :delete
+    -else
+      .header__right__signup
+        .dropdown
+          %a{href: "/users/sign_up"} Sign up
+      .header__right__login
+        .dropdown
+          %a{href: "/users/sign_in"} Login
+    .header__right__language
+      .dropdown
+        %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
+          Language
+          %span.caret
+        %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          %li
+            %a{href: "#"} English
+          %li
+            %a{href: "#"} Japanese
+          %li
+            %a{href: "#"} Chinese
+    .header__right__becomehost
+      .dropdown
+        %a{href: "/families/new"} Become host

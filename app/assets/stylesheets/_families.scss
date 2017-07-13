@@ -10,6 +10,7 @@
     width: 100vw;
     height: 450px;
     position: absolute;
+
     &__initial-form{
       width: 60%;
       height: 50px;
@@ -23,6 +24,7 @@
       right: 0;
       text-align: center;
       border-radius: 15px;
+
         textarea {
           float: left;
           width: 45%;
@@ -71,6 +73,54 @@
       }
     }
   }
+  .menu{
+    height:1px;
+    width:100%;
+    background-color: grey;
+  }
+  .progress{
+    height: 100px;
+    width: 100%;
+    background-color: #f1efef;
+    line-height: 100px;
+    &__how_it_works{
+      width: 25%;
+      height: 110px;
+      line-height: 110px;
+      margin-left: 100px;
+      font-size: 15px;
+      float: left;
+    }
+    &__home{
+      float: left;
+      width: 7%;
+
+    }
+    &__location{
+      float: left;
+      width: 7%;
+    }
+    &__rooms{
+      float:left;
+      width: 7%;
+    }
+    &__meals{
+      float:left;
+      width: 7%;
+    }
+    &__rules{
+      float: left;
+      width: 7%;
+    }
+    &__photo{
+      float: left;
+      width: 7%;
+    }
+    &__profile{
+      float: left;
+      width: 7%;
+    }
+  }
   .title{
     height: 45px;
     margin-top: 480px;
@@ -109,7 +159,7 @@
       &__pic{
         height:200px;
         width:100%;
-        background-color: pink; 
+        background-color: pink;
       }
       &__area{
         height:30px;
@@ -122,9 +172,142 @@
         height:80px;
         margin-top:5px;
         margin-left:  5px;
-      } 
+      }
     }
   }
+}
+
+.main1{
+    width: 100vw;
+    height: 900px;
+    position: absolute;
+    background-color:#f1efef;
+}
+.form{
+  width: 50%;
+  margin-left: 130px;
+  float: left;
+  background-color: white;
+  height: 600px;
+  &__look{
+    height: 75px;
+    background-color:#ca005d;
+    line-height: 75px;
+    font-size: 20px;
+    padding-left: 40px;
+    color:white;
+    border-radius: 4px 4px 0 0;
+
+    &__edit_btn{
+      height:40px;
+      width:100px;
+      text-align: center;
+      background-color: orange;
+      float: right;
+      margin-top: 5px;
+      margin-right: 40px;
+      line-height: 40px;
+      border-style: solid;
+      border-color: orange;
+      }
+    }
+  &__title{
+    &__house_type{
+      float:left;
+      width:50%;
+      height: 100px;
+      padding-left: 40px;
+      &__lable{
+        padding-top: 20px;
+        font-size: 16px;
+      }
+      &__dropdown{
+        margin-top: 10px;
+      }
+    }
+  &__listing{
+      float:left;
+      width:50%;
+      height: 100px;
+      padding-left: 15px;
+    &__lable{
+        padding-top: 20px;
+        font-size: 16px;
+      }
+      &__input{
+        margin-top: 10px;
+      }
+      &__notice{
+        font-size: 12px;
+      }
+    }
+  &__description{
+    padding-left: 40px;
+    clear: both;
+    padding-top: 20px;
+    &__label{
+      font-size: 16px;
+      margin-top: 30px;
+    }
+    &__input{
+      margin-top: 10px;
+      height:150px;
+      width: 90%;
+      border-radius: 4px;
+      border-width: 1px;
+      border-color: grey;
+      border-style: solid;
+    }
+    &__notice{
+      font-size: 12px;
+    }
+  }
+  }
+
+
+  &__label{
+    height:40px;
+    margin-left: 20px;
+    width: 150px;
+    background-color: yellow;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top:10px;
+  }
+}
+
+.notice_1{
+  width: 20%;
+  height: 75px;
+  float: left;
+  margin-left: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: #ca005d;
+  background-color: white;
+  padding: 15px;
+}
+.notice_2{
+  width: 20%;
+  height: 150px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: grey;
+  background-color: white;
+  padding: 15px;
+}
+.note_to_hosts{
+  width: 20%;
+  float: left;
+  background-color: pink;
+  height: 75px;
+  margin-left: 70px;
 }
 
 .ui-datepicker{
@@ -139,5 +322,7 @@
     border: none;
     border-radius: 0;
     outline: none;
-    font-size: 15px;  
+    font-size: 15px;
 }
+
+
