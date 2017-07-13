@@ -1,60 +1,9 @@
 .wrapper
-  .header
-    .header__left
-      Homeaway
-    .header__right
-      .header__right__destination
-        .dropdown
-          %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
-            Destination
-            %span.caret
-          %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-            %li
-              %a{href: "#"} Laos
-            %li
-              %a{href: "#"} Nepal
-      .header__right__inspire
-        .dropdown
-          %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
-            Inspeee it!
-      .header__right__signup
-        .dropdown
-          %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
-            Sign up
-            %span.caret
-          %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-            %li
-              %a{href: "users/sign_up"} guest
-            %li
-              %a{href: "hosts/sign_up"} host
-      .header__right__login
-        .dropdown
-          %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
-            Login
-            %span.caret
-          %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-            %li
-              %a{href: "users/sign_in"} guest
-            %li
-              %a{href: "hosts/sign_in"} host
-      .header__right__language
-        .dropdown
-          %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
-            Language
-            %span.caret
-          %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-            %li
-              %a{href: "#"} English
-            %li
-              %a{href: "#"} Japanese
-            %li
-              %a{href: "#"} Chinese
-      .header__right__becomehost
-        Become Host
+  = render partial: "top"
   .main
     %img{src: "http://www.resortcollection.com/wp-content/themes/resortcollection/property-images/summit/summit-beach-resort-panama-city-beach-fl-beach-01.jpg"}
       .main__initial-form
-        =form_tag('/families', method: :search) do
+        =form_tag('/listings', method: :search) do
           %textarea{cols: "30", name: "text", placeholder: "  Where is your next destination?", rows: "2"}
           #datepicker.input-daterange.input-group
             %input.input-sm.form-control{name: "start", type: "text", placeholder: "Check-in"}
